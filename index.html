@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
+
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 4em 0;
+        max-width: 640px;
+      }
+
+      .notification {
+        padding: 1em;
+        text-align: center;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mes recettes de cuisine</h1>
+
+    <div class="notification" style="display: none"></div>
+
+    <form action="" id="recipeForm">
+      <label for="name">Nom</label>
+      <input type="text" id="name" />
+
+      <label for="ingredients">Ingrédients</label>
+      <textarea id="ingredients" cols="30" rows="10"></textarea>
+
+      <label for="name">Préparation</label>
+      <textarea id="preparation" cols="30" rows="10"></textarea>
+
+      <label for="time">Time</label>
+      <input type="number" id="time" />
+
+      <label for="people">Nombre de personnes</label>
+      <input type="number" id="people" />
+
+      <button type="submit">Créer</button>
+    </form>
+
+    <div id="recipes"></div>
+  </body>
+</html>
